@@ -8,5 +8,6 @@ defmodule FilmIsNotDead.Router do
   scope "/api", FilmIsNotDead do
     pipe_through :api
     resources "/lenses", LensController
+    resources "/cameras", CameraController
   end
 end
