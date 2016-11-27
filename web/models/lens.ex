@@ -6,6 +6,7 @@ defmodule FilmIsNotDead.Lens do
     field :description, :string
     field :active, :boolean, default: true
     field :notes, :string
+    many_to_many :cameras, FilmIsNotDead.Camera, join_through: "camera_lens"
   end
 
   def changeset(model, params \\ :empty) do

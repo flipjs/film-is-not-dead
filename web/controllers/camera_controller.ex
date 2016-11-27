@@ -15,7 +15,7 @@ defmodule FilmIsNotDead.CameraController do
       {:ok, camera} ->
         conn
         |> put_status(:created)
-        # |> put_resp_header("location", camera_path(conn, :show, camera))
+        |> put_resp_header("location", camera_path(conn, :show, camera))
         |> render("show.json", camera: camera)
       {:error, changeset} ->
         conn
