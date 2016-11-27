@@ -9,7 +9,7 @@ Installation
   * Install Node.js dependencies with `npm install`
   * Start API server with `mix phoenix.server`
 
-Now visit [`localhost:3000`](http://localhost:3000) from the browser.
+Now test the API [`localhost:3000/api/resource_name`](http://localhost:3000/api/lenses) from a Rest-client software.
 
 Thanks
 ------
